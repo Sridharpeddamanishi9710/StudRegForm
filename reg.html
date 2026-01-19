@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>Registration Form</title>
+	</head>
+	<body align="center">
+		<h1><Student Registration Form</h1>
+		<form>
+		<table>
+			<tr>
+				<td>
+					<label>First Name:</label>
+				</td>
+				<td>
+                                        <input type="text" placeholder="FirstName" required>
+                                </td>
+
+			</tr>
+			<tr>
+                                <td>
+                                        <label>Last Name</label>
+                                </td>
+                                <td>
+                                        <input type="text" placeholder="lastname" required />
+                                </td>
+
+                        </tr>
+			<tr>
+                                <td>
+                                        <label>Email:</label>
+                                </td>
+                                <td>
+                                        <input type="email" placeholder="email" required />
+                                </td>
+
+                        </tr>
+			<tr>
+                                <td>
+                                        <label>Create Password:</label>
+                                </td>
+                                <td>
+                                        <input type="password" placeholder="password" required />
+                                </td>
+
+                        </tr>
+			 <tr>
+                                <td>
+                                        <label>Conform Password:</label>
+                                </td>
+                                <td>
+                                        <input type="conformpassword" placeholder="conform password" required />
+                                </td>
+
+                        </tr>
+			 <tr>
+                                <td>
+                                        <label>Contact Number</label>
+                                </td>
+                                <td>
+                                        <input type="number" placeholder="Number" required />
+                                </td>
+
+                        </tr>
+			 <tr>
+                                <td>
+                                        <label>Address</label>
+                                </td>
+                                <td>
+					<textarea rows="5" cols="20" required ></textarea>
+                                </td>
+
+                        </tr>
+			 <tr>
+			    <td>
+			        <label>Gender</label>
+			    </td>
+			    <td>
+			        <input type="radio" name="gender" value="m1" required > Male
+			    </td>
+			    <td>
+			        <input type="radio" name="gender" value="m2" required > Female
+			    </td>
+			    <td>
+			        <input type="radio" name="gender" value="m3" required > Others
+			    </td>
+			</tr>
+                       <tr>
+			    <td>
+			        <label>Hobbies</label>
+			    </td>
+			    <td>
+			        <input type="checkbox" name="hobby" value="Singing"  > Singing
+			    </td>		
+			    <td>
+			        <input type="checkbox" name="hobby" value="Dancing"> Dancing
+			    </td>				    
+			    <td>
+			        <input type="checkbox" name="hobby" value="Travelling"> Travelling
+			    </td>
+                        </tr>
+			<tr>
+                                <td>
+					<button type="submit" onclick="OnClick(e)">Submit</button>
+                                </td>
+ 
+
+                        </tr>
+  
+		</table>
+		</form>
+
+	</body>
+	<script>
+		function OnClick(e){
+			e.preventDefault();
+			alert("Successfully Registered");
+		}
+
+	</script>
+</html>
