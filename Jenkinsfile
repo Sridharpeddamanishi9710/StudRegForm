@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Sridharpeddamanishi9710/StudRegForm.git'
+                git branch: 'main', url: 'https://github.com/Sridharpeddamanishi9710/StudRegForm.git'
             }
         }
         stage('Publish') {
